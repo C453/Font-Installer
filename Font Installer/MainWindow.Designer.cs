@@ -59,12 +59,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(317, 243);
+            this.ClientSize = new System.Drawing.Size(325, 250);
             this.Controls.Add(this.ChooseFolderBtn);
             this.Controls.Add(this.pictureBox1);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(500, 500);
-            this.MinimumSize = new System.Drawing.Size(291, 161);
+            this.MaximumSize = new System.Drawing.Size(341, 289);
+            this.MinimumSize = new System.Drawing.Size(341, 289);
             this.Name = "MainWindow";
             this.Text = "C453 Font Installer";
             this.Load += new System.EventHandler(this.MainWindow_Load);
