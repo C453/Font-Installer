@@ -1,0 +1,15 @@
+﻿<Controls:MetroWindow x:Class="Font_Installer.MainWindow"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Font_Installer"
+        mc:Ignorable="d"
+        Title="Font Installer" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="ImportFontsBtn" Content="Import Fonts" HorizontalAlignment="Left" Margin="404,284,0,0" VerticalAlignment="Top" Width="103" Click="ImportFontsBtn_Click"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="269" Margin="10,10,0,0" VerticalAlignment="Top" Width="497" AllowDrop="True" Drop="ListBox_OnDrop"/>
+        <Label x:Name="label" Content="Drag Fonts onto Window to Add" HorizontalAlignment="Left" Margin="170,146,0,0" VerticalAlignment="Top" Width="183"/>
+    </Grid>
+</Controls:MetroWindow>
