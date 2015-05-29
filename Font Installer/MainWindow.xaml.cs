@@ -22,10 +22,13 @@ namespace Font_Installer
         public MainWindow()
         {
             InitializeComponent();
+            this.Topmost = true;
+            this.ResizeMode = ResizeMode.NoResize;
         }
 
         private void ListBox_OnDrop(object sender, DragEventArgs e)
         {
+            label.Visibility = Visibility.Hidden;
 	        if (!e.Data.GetDataPresent(DataFormats.FileDrop)) return;
 
 	        var files = (string[]) e.Data.GetData(DataFormats.FileDrop);
@@ -55,7 +58,7 @@ namespace Font_Installer
 
             if (_errorCount > 0)
             {
-                MessageBox.Show(string.Format("There were some errors installing fonts. {0} out of {1} fonts have been installed.", Fonts.Count - _errorCount, Fonts.Count));
+                MessageBox.Show($"There were some errors installing fonts. {Fonts.Count - _errorCount} out of {Fonts.Count} fonts have been installed.");
                 return;
             }
 
